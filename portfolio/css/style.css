@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: 'Xanh Mono', monospace;
   margin: 0 50px;
@@ -25,10 +26,10 @@ header .container {
 
 .nav {
   width: 50%; }
-  .nav .nav-list {
+  .nav #nav-list {
     display: flex;
     justify-content: space-between; }
-    .nav .nav-list li {
+    .nav #nav-list li {
       font-size: 20px; }
 
 .main-img {
@@ -93,5 +94,125 @@ footer .container {
     width: 70%;
     margin-top: 20px;
     margin-bottom: 50px; }
+
+@media (max-width: 680px) {
+  .header-nav nav {
+    display: none; }
+
+  header .container {
+    display: flex; }
+
+ /*----------------------------
+* メニュー開閉ボタン
+*----------------------------*/
+  .menu-btn {
+    top: 80px;
+    right: 52px;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; }
+
+  /*----------------------------
+  * メニュー本体
+  *----------------------------*/
+  .menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: rgba(241, 241, 241, 0.9); }
+
+  .menu-contents {
+    margin-top: 100px; }
+
+  .menu__item {
+    width: 100%;
+    height: auto;
+    padding: .5em 1em;
+    text-align: center;
+    color: #3f3f3f;
+    box-sizing: border-box;
+    font-size: 20px; }
+
+  /*----------------------------
+  * アニメーション部分
+  *----------------------------*/
+  /* アニメーション前のメニューの状態 */
+  .menu {
+    transform: translateX(100vw);
+    transition: all .5s linear; }
+
+  /* アニメーション後のメニューの状態 */
+  .menu.is-active {
+    transform: translateX(0); }
+
+  .about-contents {
+    display: block; }
+    .about-contents .about-contents-left {
+      width: 100%;
+      margin-bottom: 20px; }
+      .about-contents .about-contents-left .introduction {
+        margin-top: 20px; }
+    .about-contents .about-contents-right {
+      width: 100%; }
+
+  .skill-contents {
+    display: block; }
+    .skill-contents .skill {
+      width: 100%;
+      margin-bottom: 40px; }
+      .skill-contents .skill p {
+        width: 60%;
+        margin: 15px auto; }
+
+  .nav {
+    margin: 20px auto -50px;
+    text-align: center; }
+    .nav #nav-list {
+      display: block; }
+      .nav #nav-list li {
+        display: block; } }
+.opacity:hover {
+  opacity: 0.8; }
+
+.underline {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  padding-top: 20px; }
+
+.underline::after {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #fa8787;
+  transform: scale(0, 1);
+  transform-origin: center top;
+  transition: transform .3s; }
+
+.underline:hover::after {
+  transform: scale(1, 1); }
+
+/*アニメーション要素のスタイル*/
+.animation {
+  opacity: 0;
+  visibility: hidden;
+  transition: 2s;
+  transform: translateY(30px); }
+
+/*アニメーション要素までスクロールした時のスタイル*/
+.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0); }
 
 /*# sourceMappingURL=style.css.map */
