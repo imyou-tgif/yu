@@ -126,6 +126,9 @@ footer{
 }
 
 // レスポンシブ
+.menu-btn,.menu{
+  display: none;
+}
 
 @media(max-width:680px){
   .header-nav{

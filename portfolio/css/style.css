@@ -95,6 +95,9 @@ footer .container {
     margin-top: 20px;
     margin-bottom: 50px; }
 
+.menu-btn, .menu {
+  display: none; }
+
 @media (max-width: 680px) {
   .header-nav nav {
     display: none; }
