@@ -1,0 +1,221 @@
+@charset "UTF-8";
+body {
+  font-family: 'Xanh Mono', monospace;
+  margin: 0 50px;
+  color: #3f3f3f;
+  background-color: #fffefb; }
+
+.container {
+  max-width: 970px;
+  margin: 0 auto; }
+
+.heading {
+  text-align: center;
+  font-size: 35px;
+  margin-top: 30px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #7f7f7f; }
+
+header .container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end; }
+  header .container .logo {
+    font-size: 60px; }
+
+.nav {
+  width: 50%; }
+  .nav #nav-list {
+    display: flex;
+    justify-content: space-between; }
+    .nav #nav-list li {
+      font-size: 20px; }
+
+.main-img {
+  margin-top: 30px; }
+  .main-img img {
+    width: 100%; }
+
+.about-contents {
+  margin-top: 40px;
+  display: flex;
+  align-items: flex-end; }
+  .about-contents .about-contents-right {
+    width: 50%; }
+    .about-contents .about-contents-right img {
+      width: 100%; }
+  .about-contents .about-contents-left {
+    width: 50%;
+    margin-right: 20px; }
+    .about-contents .about-contents-left .about-contents-top {
+      display: flex;
+      align-items: flex-end; }
+      .about-contents .about-contents-left .about-contents-top .name {
+        margin-right: 14%; }
+        .about-contents .about-contents-left .about-contents-top .name h3 {
+          font-size: 25px;
+          font-weight: bold; }
+        .about-contents .about-contents-left .about-contents-top .name p {
+          margin-top: 5px; }
+      .about-contents .about-contents-left .about-contents-top #instagram {
+        text-decoration: underline; }
+    .about-contents .about-contents-left .introduction {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      line-height: 1.5;
+      margin-top: 15%; }
+
+.skill-contents {
+  margin-top: 35px;
+  display: flex; }
+  .skill-contents .skill {
+    width: 33%;
+    text-align: center;
+    margin-right: 20px; }
+    .skill-contents .skill .skill-icon {
+      margin-top: 8px; }
+    .skill-contents .skill p {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      line-height: 1.4;
+      margin-top: 15px; }
+
+.contact-contents {
+  margin-top: 30px;
+  margin-bottom: 100px; }
+  .contact-contents h4 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 22px; }
+    .contact-contents h4 span {
+      font-family: 'Xanh Mono', monospace; }
+
+footer .container {
+  border-top: 1px solid #7f7f7f; }
+  footer .container .footer-nav {
+    width: 70%;
+    margin-top: 20px;
+    margin-bottom: 50px; }
+
+.menu-btn, .menu {
+  display: none; }
+
+@media (max-width: 680px) {
+  .header-nav nav {
+    display: none; }
+
+  header .container {
+    display: flex; }
+
+ /*----------------------------
+* メニュー開閉ボタン
+*----------------------------*/
+  .menu-btn {
+    top: 80px;
+    right: 52px;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; }
+
+  /*----------------------------
+  * メニュー本体
+  *----------------------------*/
+  .menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: rgba(241, 241, 241, 0.9); }
+
+  .menu-contents {
+    margin-top: 100px; }
+
+  .menu__item {
+    width: 100%;
+    height: auto;
+    padding: .5em 1em;
+    text-align: center;
+    color: #3f3f3f;
+    box-sizing: border-box;
+    font-size: 20px; }
+
+  /*----------------------------
+  * アニメーション部分
+  *----------------------------*/
+  /* アニメーション前のメニューの状態 */
+  .menu {
+    transform: translateX(100vw);
+    transition: all .5s linear; }
+
+  /* アニメーション後のメニューの状態 */
+  .menu.is-active {
+    transform: translateX(0); }
+
+  .about-contents {
+    display: block; }
+    .about-contents .about-contents-left {
+      width: 100%;
+      margin-bottom: 20px; }
+      .about-contents .about-contents-left .introduction {
+        margin-top: 20px; }
+    .about-contents .about-contents-right {
+      width: 100%; }
+
+  .skill-contents {
+    display: block; }
+    .skill-contents .skill {
+      width: 100%;
+      margin-bottom: 40px; }
+      .skill-contents .skill p {
+        width: 60%;
+        margin: 15px auto; }
+
+  .nav {
+    margin: 20px auto -50px;
+    text-align: center; }
+    .nav #nav-list {
+      display: block; }
+      .nav #nav-list li {
+        display: block; } }
+.opacity:hover {
+  opacity: 0.8; }
+
+.underline {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  padding-top: 20px; }
+
+.underline::after {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #fa8787;
+  transform: scale(0, 1);
+  transform-origin: center top;
+  transition: transform .3s; }
+
+.underline:hover::after {
+  transform: scale(1, 1); }
+
+/*アニメーション要素のスタイル*/
+.animation {
+  opacity: 0;
+  visibility: hidden;
+  transition: 2s;
+  transform: translateY(30px); }
+
+/*アニメーション要素までスクロールした時のスタイル*/
+.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0); }
+
+/*# sourceMappingURL=style.css.map */
