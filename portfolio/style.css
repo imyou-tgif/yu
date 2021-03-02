@@ -79,6 +79,15 @@ header .container {
       line-height: 1.4;
       margin-top: 15px; }
 
+#works .works-contents {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px; }
+  #works .works-contents a {
+    width: 30%; }
+    #works .works-contents a img {
+      width: 100%; }
+
 .contact-contents {
   margin-top: 30px;
   margin-bottom: 100px; }
