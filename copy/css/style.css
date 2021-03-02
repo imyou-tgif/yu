@@ -1,0 +1,935 @@
+@charset "UTF-8";
+body {
+  font-family: "Noto Sans JP",sans-serif;
+  color: #333; }
+
+header {
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 100;
+  transition: 0.5s;
+  width: 100%; }
+  header .header-right .nav {
+    font-size: 20px;
+    font-family: "Noto Serif JP",serif;
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    font-weight: bold; }
+    header .header-right .nav .black {
+      background-color: #252c34;
+      display: inline-block;
+      align-items: center;
+      padding: 60px 40px; }
+    header .header-right .nav .pink {
+      background-color: #cc2c86;
+      padding: 60px 40px;
+      align-items: center;
+      display: inline-block; }
+  header .header-left {
+    writing-mode: vertical-lr;
+    display: flex;
+    position: fixed;
+    z-index: 100;
+    left: 30px;
+    top: 25%;
+    align-items: center; }
+    header .header-left .sns .sns-icon {
+      margin-bottom: 30px; }
+      header .header-left .sns .sns-icon .face {
+        margin-left: 4px; }
+    header .header-left p {
+      font-weight: bold;
+      font-size: 14px;
+      letter-spacing: 2px;
+      padding-bottom: 100px;
+      position: relative;
+      transform: rotate(180deg); }
+      header .header-left p:before {
+        content: "";
+        width: 1px;
+        height: 70px;
+        background-color: #252c34;
+        position: absolute;
+        bottom: 0;
+        right: 50%; }
+
+.scroll-nav {
+  background-color: #fff;
+  padding: 20px 20px; }
+  .scroll-nav .nav .black {
+    padding: 15px 40px !important; }
+  .scroll-nav .nav .pink {
+    padding: 15px 40px !important; }
+
+.top-top {
+  animation: SlideIn 2.0s; }
+@keyframes SlideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-64px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+.main-img {
+  background-image: url(https://www.gpol.co.jp/recruit/career_dir/assets/images/bg_mv.jpg);
+  background-size: cover;
+  margin-left: 25%;
+  position: relative;
+  right: 0;
+  top: 0; }
+  .main-img .main-img-contents {
+    min-height: 700px; }
+
+.top-text {
+  font-family: "Noto Serif JP",serif;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 24px;
+  position: absolute;
+  left: -20%;
+  top: 200px; }
+  .top-text .career {
+    color: #fff;
+    float: left; }
+    .top-text .career h3 {
+      background-color: #252c34;
+      padding: 15px 10px; }
+  .top-text .director {
+    float: right; }
+    .top-text .director h3 {
+      padding: 15px 10px;
+      background-color: #fff; }
+  .top-text .head {
+    font-family: "Noto Sans JP",sans-serif;
+    font-size: 50px;
+    margin-top: 90px;
+    line-height: 1.4;
+    font-weight: 600;
+    letter-spacing: 9px; }
+
+.top-under {
+  display: flex;
+  position: relative; }
+  .top-under .recruitment {
+    width: 50%;
+    background-color: #fff;
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: 2px;
+    padding: 40px 0 0 60px;
+    line-height: 1.4;
+    position: absolute;
+    top: -70px; }
+  .top-under .agresive {
+    width: 50%;
+    color: #fff;
+    background-color: #252c34;
+    font-family: "Noto Serif JP",serif;
+    position: absolute;
+    left: 50%;
+    padding: 28px;
+    font-size: 18px; }
+
+.heading {
+  font-family: "Noto Serif JP",serif;
+  text-align: center;
+  font-weight: bold;
+  font-size: 42px;
+  letter-spacing: 1px;
+  opacity: 0;
+  transition: 1.3s;
+  transform: translateY(40px); }
+  .heading h2 {
+    position: relative; }
+    .heading h2:before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: -20px;
+      /*下線の上下位置調整*/
+      display: inline-block;
+      width: 100px;
+      /*下線の幅*/
+      height: 2px;
+      /*下線の太さ*/
+      -moz-transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translate(-50%);
+      /*位置調整*/
+      background-color: #cc2c86;
+      /*下線の色*/ }
+
+.description {
+  margin-top: 180px; }
+  .description .description-contents {
+    margin-top: 80px;
+    display: flex; }
+    .description .description-contents .description-img {
+      width: 50%; }
+      .description .description-contents .description-img .office-img {
+        width: 100%; }
+    .description .description-contents .description-heading {
+      width: 50%;
+      font-weight: 600;
+      font-size: 65px;
+      padding-top: 50px;
+      padding-left: 90px;
+      letter-spacing: 5px; }
+  .description .description-text {
+    margin-left: 28%;
+    position: relative; }
+    .description .description-text .description-text-contents {
+      background-color: #fff;
+      position: absolute;
+      top: -100px;
+      right: 0;
+      padding: 40px 52px 0 40px; }
+      .description .description-text .description-text-contents h4 {
+        font-weight: bold;
+        font-family: "Noto Serif JP",serif;
+        font-size: 22px; }
+      .description .description-text .description-text-contents p {
+        margin-top: 25px;
+        font-weight: 400;
+        letter-spacing: 0.1rem;
+        line-height: 1.4;
+        font-size: 14px; }
+
+.attraction {
+  margin-top: 265px; }
+  .attraction .attraction-img {
+    margin-top: 60px;
+    background-image: url(https://www.gpol.co.jp/recruit/career_dir/assets/images/bg_attraction.jpg);
+    background-size: cover;
+    min-height: 450px; }
+    .attraction .attraction-img h3 {
+      padding-top: 134px;
+      padding-left: 27px;
+      color: rgba(255, 255, 255, 0.8);
+      font-weight: bold;
+      font-size: 75px;
+      letter-spacing: 1px; }
+  .attraction .attraction-text {
+    background-color: #eee;
+    display: flex;
+    flex-wrap: wrap; }
+    .attraction .attraction-text .attraction-contents {
+      display: flex;
+      width: 50%;
+      padding-right: 50px;
+      padding-bottom: 60px;
+      position: relative;
+      top: -150px; }
+      .attraction .attraction-text .attraction-contents h4 {
+        font-weight: bold;
+        font-family: "Noto Serif JP",serif;
+        background-color: #252c34;
+        color: #fff;
+        padding: 10px 30px;
+        border-left: 5px solid #cc2c86;
+        display: inline-block;
+        font-size: 22px;
+        z-index: 2;
+        position: absolute; }
+      .attraction .attraction-text .attraction-contents p {
+        background-color: #fff;
+        padding: 50px 40px;
+        line-height: 2;
+        font-size: 13px;
+        position: relative;
+        top: 20px;
+        left: 20px;
+        z-index: 0; }
+
+.present {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  overflow: hidden; }
+  .present .mini-heading {
+    text-align: center;
+    font-family: "Noto Serif JP",serif;
+    font-weight: 400;
+    margin-top: 60px;
+    font-size: 20px; }
+  .present .persons {
+    margin: 20px;
+    margin-top: 50px; }
+    .present .persons .person {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 80px; }
+      .present .persons .person .person-img {
+        width: 32%;
+        position: relative; }
+        .present .persons .person .person-img img {
+          width: 100%; }
+        .present .persons .person .person-img .person-number {
+          width: 25%;
+          position: absolute;
+          top: -10px;
+          left: 10px; }
+        .present .persons .person .person-img .name {
+          background-color: #252c34;
+          color: #fff;
+          text-align: center;
+          font-weight: bold;
+          padding: 10px 0;
+          width: 85%;
+          position: relative;
+          top: -100px;
+          left: 30%; }
+      .present .persons .person .person-text {
+        width: 60%; }
+        .present .persons .person .person-text .person-career {
+          display: flex;
+          font-weight: bold;
+          align-items: flex-end;
+          letter-spacing: 1px; }
+          .present .persons .person .person-text .person-career .history {
+            padding: 3px 8px;
+            border: 1px solid #252c34;
+            margin-right: 30px;
+            font-size: 15px; }
+          .present .persons .person .person-text .person-career .campany-name {
+            display: flex; }
+            .present .persons .person .person-text .person-career .campany-name .fa-play {
+              margin: 0 20px;
+              font-size: 8px;
+              color: #abbbbb; }
+        .present .persons .person .person-text .person-heading {
+          margin-top: 30px;
+          padding-left: 15px;
+          font-family: "Noto Serif JP",serif;
+          font-weight: bold;
+          border-left: 2px solid #cc2c86;
+          font-size: 22px;
+          line-height: 1.5; }
+        .present .persons .person .person-text .interview {
+          margin-top: 60px;
+          border: 4px solid #ddd;
+          padding: 30px; }
+          .present .persons .person .person-text .interview .interview-heading {
+            font-family: "Noto Serif JP",serif;
+            align-items: center;
+            position: relative;
+            top: -40px;
+            background-color: #fff;
+            padding: 0 20px;
+            display: inline-block; }
+            .present .persons .person .person-text .interview .interview-heading .interview-interview {
+              float: left;
+              margin-right: 18px;
+              padding: 3px 20px;
+              background-color: #cc2c86;
+              color: #fff; }
+            .present .persons .person .person-text .interview .interview-heading .feeling {
+              display: inline-block;
+              font-weight: bold;
+              color: #cc2c86; }
+          .present .persons .person .person-text .interview .interview-text {
+            line-height: 2; }
+    .present .persons .person:nth-child(even) {
+      flex-direction: row-reverse; }
+      .present .persons .person:nth-child(even) .name {
+        position: relative;
+        left: -10%; }
+
+.environment {
+  background-color: #eee; }
+  .environment .container {
+    margin: 0 20px;
+    padding: 30px 0 70px; }
+    .environment .container .environment-environment {
+      background-image: url(https://www.gpol.co.jp/recruit/career_dir/assets/images/bg_environment.jpg);
+      background-size: cover;
+      margin-top: 25px;
+      color: #fff; }
+      .environment .container .environment-environment .environment-top {
+        text-align: center;
+        padding-top: 70px; }
+        .environment .container .environment-environment .environment-top .environment-en {
+          color: rgba(255, 255, 255, 0.8);
+          font-weight: bold;
+          letter-spacing: 1px; }
+        .environment .container .environment-environment .environment-top h3 {
+          display: inline-block;
+          font-weight: bold;
+          padding-top: 20px;
+          font-size: 45px;
+          font-family: "Noto Serif JP",serif;
+          position: relative; }
+        .environment .container .environment-environment .environment-top h3:before {
+          content: '';
+          position: absolute;
+          left: 50%;
+          bottom: -20px;
+          /*下線の上下位置調整*/
+          display: inline-block;
+          width: 100px;
+          /*下線の幅*/
+          height: 2px;
+          /*下線の太さ*/
+          -moz-transform: translateX(-50%);
+          -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+          transform: translate(-50%);
+          /*位置調整*/
+          background-color: #fff;
+          /*下線の色*/ }
+        .environment .container .environment-environment .environment-top .number-director {
+          color: #333;
+          margin-top: 60px;
+          font-weight: bold; }
+          .environment .container .environment-environment .environment-top .number-director p {
+            display: inline-block;
+            padding: 18px;
+            background-color: #fff;
+            font-size: 24px;
+            letter-spacing: 1px; }
+            .environment .container .environment-environment .environment-top .number-director p span {
+              color: #cc2c86; }
+        .environment .container .environment-environment .environment-top .small {
+          margin-top: 10px;
+          font-size: 14px; }
+      .environment .container .environment-environment .environment-under {
+        display: flex;
+        padding: 20px 90px;
+        padding-bottom: 60px; }
+        .environment .container .environment-environment .environment-under .under-img {
+          width: 50%; }
+          .environment .container .environment-environment .environment-under .under-img img {
+            width: 100%; }
+        .environment .container .environment-environment .environment-under .under-text {
+          width: 50%;
+          margin-right: 40px;
+          font-size: 16px; }
+          .environment .container .environment-environment .environment-under .under-text p {
+            line-height: 2.2;
+            margin-top: 40px; }
+          .environment .container .environment-environment .environment-under .under-text .date {
+            margin: 0;
+            text-align: right; }
+    .environment .container .environment-center {
+      margin-top: 60px; }
+      .environment .container .environment-center .center-contents {
+        display: flex;
+        margin-bottom: 40px;
+        background-color: #fff; }
+        .environment .container .environment-center .center-contents .center-img {
+          width: 35%; }
+          .environment .container .environment-center .center-contents .center-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; }
+        .environment .container .environment-center .center-contents .center-text {
+          width: 65%;
+          font-family: "Noto Serif JP",serif;
+          padding: 40px 35px;
+          font-weight: bold; }
+          .environment .container .environment-center .center-contents .center-text .center-text-top {
+            padding-left: 15px;
+            border-left: 2px solid #cc2c86; }
+            .environment .container .environment-center .center-contents .center-text .center-text-top h4 {
+              font-size: 30px; }
+            .environment .container .environment-center .center-contents .center-text .center-text-top p {
+              font-size: 22px;
+              margin-top: 10px; }
+          .environment .container .environment-center .center-contents .center-text .center-text-under {
+            margin-top: 20px; }
+            .environment .container .environment-center .center-contents .center-text .center-text-under p {
+              line-height: 2.0; }
+      .environment .container .environment-center .center-contents:nth-child(even) {
+        flex-direction: row-reverse; }
+    .environment .container .feature {
+      margin-top: 90px; }
+      .environment .container .feature .feature-heading {
+        padding: 0 40px; }
+        .environment .container .feature .feature-heading h4 {
+          text-align: center;
+          font-weight: bold;
+          font-family: "Noto Serif JP",serif;
+          font-size: 30px; }
+        .environment .container .feature .feature-heading p {
+          line-height: 2;
+          margin-top: 30px; }
+      .environment .container .feature .feature-contents {
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap; }
+        .environment .container .feature .feature-contents .system-m {
+          margin-bottom: 40px;
+          padding-right: 20px;
+          width: 50%;
+          display: flex; }
+          .environment .container .feature .feature-contents .system-m .feature-system {
+            padding: 30px;
+            display: flex;
+            background-color: #fff;
+            border-top: 12px solid #cc2c86; }
+            .environment .container .feature .feature-contents .system-m .feature-system .feature-img {
+              padding-right: 30px;
+              width: 40%; }
+              .environment .container .feature .feature-contents .system-m .feature-system .feature-img img {
+                width: 100%; }
+            .environment .container .feature .feature-contents .system-m .feature-system .feature-text {
+              width: 60%; }
+              .environment .container .feature .feature-contents .system-m .feature-system .feature-text h5 {
+                font-family: "Noto Serif JP",serif;
+                font-weight: bold;
+                font-size: 20px;
+                color: #cc2c86;
+                letter-spacing: 2px; }
+              .environment .container .feature .feature-contents .system-m .feature-system .feature-text p {
+                margin-top: 20px;
+                line-height: 2; }
+        .environment .container .feature .feature-contents .system-m:nth-child(even) {
+          padding-right: 0;
+          padding-left: 20px; }
+
+.allowance {
+  background-color: #252c34;
+  color: #fff; }
+  .allowance .container {
+    padding: 80px 100px; }
+    .allowance .container .allowance-heading {
+      text-align: center;
+      font-weight: bold;
+      font-size: 30px;
+      font-family: "Noto Serif JP",serif; }
+    .allowance .container .allowance-contents {
+      margin-top: 50px; }
+      .allowance .container .allowance-contents .allowance-content {
+        display: flex;
+        padding-bottom: 25px;
+        margin-bottom: 25px;
+        border-bottom: 1px dotted rgba(255, 255, 255, 0.3); }
+        .allowance .container .allowance-contents .allowance-content .bold {
+          font-weight: bold;
+          width: 170px; }
+
+.data {
+  padding: 100px 0; }
+  .data .container {
+    margin: 0 20px; }
+    .data .container .data-heading {
+      text-align: center;
+      font-weight: bold; }
+      .data .container .data-heading h4 {
+        color: rgba(226, 226, 226, 0.86);
+        font-size: 40px; }
+      .data .container .data-heading h5 {
+        font-family: "Noto Serif JP",serif;
+        font-size: 35px;
+        margin-top: 10px; }
+    .data .container .data-contents {
+      margin-top: 60px;
+      display: flex;
+      justify-content: space-between; }
+      .data .container .data-contents .data-content {
+        width: 30%;
+        padding: 30px 10px 20px;
+        border: 3px solid #bdbdbd;
+        border-radius: 10px; }
+        .data .container .data-contents .data-content .data-icon {
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+          .data .container .data-contents .data-content .data-icon p {
+            color: #cc2c86;
+            font-size: 24px;
+            font-weight: bold;
+            font-family: "Noto Serif JP",serif;
+            margin-left: 13px; }
+        .data .container .data-contents .data-content .data-number {
+          margin-top: 30px;
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+
+.office {
+  background-image: url(https://www.gpol.co.jp/recruit/career_dir/assets/images/bg_office.jpg);
+  background-size: cover; }
+  .office .container {
+    margin: 0 20px;
+    padding: 100px 0 50px; }
+    .office .container .office-heading {
+      text-align: center;
+      font-weight: bold; }
+      .office .container .office-heading h5 {
+        color: rgba(255, 255, 255, 0.3);
+        font-size: 40px; }
+      .office .container .office-heading p {
+        margin-top: 7px;
+        font-family: "Noto Serif JP",serif;
+        font-size: 30px;
+        color: #fff; }
+    .office .container .office-contents {
+      margin-top: 50px; }
+      .office .container .office-contents .direction {
+        margin-top: 20px;
+        margin-bottom: 50px;
+        color: #fff; }
+      .office .container .office-contents .office-content {
+        display: flex; }
+        .office .container .office-contents .office-content .office-img {
+          position: relative;
+          width: 40%; }
+          .office .container .office-contents .office-content .office-img .office-img-img {
+            object-fit: cover;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            z-index: 1; }
+          .office .container .office-contents .office-content .office-img .office-name {
+            color: #fff;
+            background-color: #252c34;
+            display: inline-block;
+            padding: 20px 10px;
+            position: absolute;
+            top: -20px;
+            left: -10px;
+            z-index: 2; }
+            .office .container .office-contents .office-content .office-img .office-name img {
+              width: 30%; }
+            .office .container .office-contents .office-content .office-img .office-name a {
+              float: left; }
+            .office .container .office-contents .office-content .office-img .office-name p {
+              float: left;
+              margin-right: 20px; }
+        .office .container .office-contents .office-content .google {
+          width: 60%;
+          padding-left: 10px; }
+          .office .container .office-contents .office-content .google iframe {
+            width: 100%; }
+
+.carousel {
+  overflow: hidden;
+  padding: 100px 0; }
+  .carousel .carousel-heading {
+    text-align: center;
+    font-family: "Noto Serif JP",serif;
+    font-size: 30px;
+    font-weight: bold; }
+  .carousel .slider {
+    margin-top: 50px; }
+    .carousel .slider .slider-content {
+      margin-right: 25px; }
+      .carousel .slider .slider-content .slider-img {
+        width: 100%; }
+  .carousel .insta-logo {
+    margin-top: 20px;
+    text-align: right;
+    margin-right: 20px; }
+
+.future .container {
+  margin: 0 10px; }
+  .future .container .future-contents {
+    margin-top: 60px;
+    padding: 60px;
+    background-color: #eee; }
+    .future .container .future-contents .future-text {
+      background-color: #fff;
+      padding: 50px 75px;
+      font-family: "Noto Serif JP",serif;
+      font-weight: bold;
+      line-height: 2;
+      font-size: 19px; }
+    .future .container .future-contents .contact-form {
+      margin-top: 70px;
+      display: flex;
+      text-align: center; }
+      .future .container .future-contents .contact-form p {
+        font-size: 17px; }
+      .future .container .future-contents .contact-form a {
+        font-family: "Noto Serif JP",serif;
+        font-weight: bold;
+        margin-top: 20px;
+        padding: 30px 0;
+        display: block;
+        color: #fff;
+        font-size: 25px; }
+      .future .container .future-contents .contact-form .contact-form-left {
+        width: 50%;
+        padding: 0 30px; }
+        .future .container .future-contents .contact-form .contact-form-left a {
+          background-color: #252c34; }
+      .future .container .future-contents .contact-form .contact-form-right {
+        width: 50%;
+        padding: 0 30px; }
+        .future .container .future-contents .contact-form .contact-form-right a {
+          background-color: #cc2c86; }
+        .future .container .future-contents .contact-form .contact-form-right .under-entry {
+          margin-top: 20px;
+          font-family: "Noto Serif JP",serif; }
+  .future .container .future-under {
+    margin: 60px 0;
+    text-align: center;
+    font-weight: bold; }
+    .future .container .future-under p {
+      font-size: 17px; }
+    .future .container .future-under a {
+      font-family: "Noto Serif JP",serif;
+      margin-top: 20px;
+      display: inline-block;
+      padding: 25px 40px;
+      border: 1px solid #252c34;
+      font-size: 23px; }
+      .future .container .future-under a span {
+        margin-left: 10px; }
+      .future .container .future-under a img {
+        vertical-align: middle; }
+
+.link {
+  background-color: #252c34;
+  color: #fff;
+  font-family: "Noto Serif JP",serif; }
+  .link .link-contents {
+    padding: 70px 17px;
+    display: flex; }
+    .link .link-contents .link-left {
+      width: 35%; }
+      .link .link-contents .link-left h5 {
+        font-weight: bold;
+        font-size: 30px;
+        position: relative;
+        padding-left: 80px; }
+        .link .link-contents .link-left h5:before {
+          content: "";
+          width: 70px;
+          height: 1px;
+          background-color: #cc2c86;
+          position: absolute;
+          top: 50%;
+          left: 0; }
+    .link .link-contents .link-right {
+      width: 65%; }
+      .link .link-contents .link-right .link-content {
+        display: flex;
+        justify-content: space-between;
+        font-weight: bold; }
+        .link .link-contents .link-right .link-content li {
+          border: 1px solid rgba(255, 255, 255, 0.25);
+          text-align: center;
+          padding: 18px 25px 18px 40px; }
+          .link .link-contents .link-right .link-content li span {
+            color: #bec0c2;
+            font-size: 1px;
+            padding-right: 18px; }
+            .link .link-contents .link-right .link-content li span img {
+              vertical-align: middle;
+              width: 7px;
+              margin-left: 10px;
+              padding-right: 0; }
+      .link .link-contents .link-right .banner {
+        margin-top: 20px; }
+        .link .link-contents .link-right .banner img {
+          width: 100%; }
+
+footer .footer-container {
+  margin: 20px 30px 30px; }
+  footer .footer-container .footer-contents {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; }
+    footer .footer-container .footer-contents li {
+      padding-left: 30px;
+      vertical-align: middle; }
+      footer .footer-container .footer-contents li a {
+        font-size: 12px; }
+        footer .footer-container .footer-contents li a span img {
+          width: 9px;
+          vertical-align: middle; }
+    footer .footer-container .footer-contents .list-last a {
+      position: relative;
+      top: -26px; }
+    footer .footer-container .footer-contents .list-last .m-l {
+      margin-left: 30px; }
+    footer .footer-container .footer-contents .border-right {
+      padding-right: 20px;
+      border-right: 1px solid #bdbdbd; }
+
+.active {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+  visibility: visible; }
+
+.active-x {
+  opacity: 1 !important;
+  transform: translateX(0) !important;
+  visibility: visible; }
+
+@media (max-width: 1060px) {
+  header {
+    display: flex;
+    flex-direction: row-reverse; }
+    header .header-right .black {
+      padding: 15px 40px !important; }
+    header .header-right .pink {
+      padding: 15px 40px !important; }
+    header .scroll-nav {
+      padding: 10px; }
+    header .header-left {
+      position: unset;
+      writing-mode: unset;
+      margin-right: 40px; }
+      header .header-left .sns-icon {
+        margin-left: 20px; }
+      header .header-left p {
+        display: none; }
+
+  .top {
+    overflow: hidden; }
+    .top .main-img {
+      position: unset;
+      margin: 0; }
+      .top .main-img .top-text {
+        top: 150px;
+        left: 3%; }
+        .top .main-img .top-text h3 {
+          display: inline-block;
+          padding: 10px 5px; }
+        .top .main-img .top-text .career {
+          float: unset; }
+        .top .main-img .top-text .director {
+          float: unset;
+          margin-top: 10px; }
+        .top .main-img .top-text .head {
+          margin-top: 23px;
+          font-size: 42px; }
+    .top .top-under {
+      top: -135px;
+      display: unset; }
+      .top .top-under .recruitment {
+        position: unset;
+        font-size: 20px;
+        padding: 30px 30px 21px 40px;
+        width: 60%; }
+      .top .top-under .agresive {
+        text-align: right;
+        position: unset;
+        margin-left: 10%;
+        width: 90%; }
+
+  .heading {
+    font-size: 35px; }
+
+  .description {
+    margin-top: -60px; }
+    .description .description-contents {
+      display: unset; }
+      .description .description-contents .description-img {
+        margin-top: 50px;
+        width: 90%; }
+        .description .description-contents .description-img img {
+          height: 400px; }
+      .description .description-contents .description-heading {
+        width: 90%;
+        float: right;
+        position: relative;
+        top: -200px;
+        background-color: #fff;
+        padding-bottom: 50px; }
+    .description .description-text {
+      margin: 0;
+      top: 100px; }
+      .description .description-text .description-text-contents {
+        top: 0; }
+
+  .attraction {
+    margin-top: 500px; }
+    .attraction .attraction-text {
+      padding: 0 30px; }
+      .attraction .attraction-text .attraction-contents {
+        width: 100%;
+        padding-right: 0; }
+        .attraction .attraction-text .attraction-contents p {
+          left: 0;
+          padding-bottom: 30px;
+          font-size: 14px; }
+
+  .present .person {
+    display: unset !important;
+    justify-content: unset; }
+    .present .person .person-img {
+      margin: 0 auto;
+      width: 40% !important; }
+    .present .person .person-text {
+      width: 100% !important;
+      margin-bottom: 50px; }
+
+  .environment .environment-under {
+    flex-direction: column-reverse;
+    margin: 0 auto; }
+    .environment .environment-under .under-text {
+      width: 90% !important;
+      margin: 0 auto; }
+    .environment .environment-under .under-img {
+      width: 70% !important;
+      margin: 0 auto; }
+  .environment .feature-contents {
+    display: unset !important; }
+    .environment .feature-contents .system-m {
+      width: 100% !important;
+      margin-top: 50px; }
+      .environment .feature-contents .system-m .feature-img {
+        width: 20% !important; }
+      .environment .feature-contents .system-m .feature-text {
+        width: 100% !important; }
+    .environment .feature-contents .system-m:nth-child(even) {
+      padding-left: 0 !important; }
+
+  .data .data-contents {
+    display: unset !important; }
+    .data .data-contents .data-content {
+      width: 100% !important;
+      margin-top: 30px;
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 30px !important; }
+      .data .data-contents .data-content .data-number {
+        margin-top: 0 !important; }
+
+  .office .office-content .office-img {
+    width: 30% !important; }
+    .office .office-content .office-img .office-img-img {
+      height: 190px; }
+  .office .office-content .google {
+    width: 70% !important; }
+    .office .office-content .google iframe {
+      height: 190px; }
+
+  .future .contact-form {
+    display: unset !important; }
+    .future .contact-form .contact-form-left {
+      width: 100% !important;
+      margin-top: 60px; }
+    .future .contact-form .contact-form-right {
+      width: 100% !important;
+      margin-top: 40px; }
+
+  .link {
+    padding: 50px 20px 40px !important; }
+    .link .link-contents {
+      display: unset; }
+      .link .link-contents .link-right {
+        width: 80%;
+        margin: 30px auto 0; }
+
+  footer {
+    text-align: center; }
+    footer .footer-container {
+      margin: 0; }
+      footer .footer-container .footer-contents {
+        display: unset !important; }
+        footer .footer-container .footer-contents li {
+          border-bottom: 1px solid #bdbdbd;
+          padding: 20px 0; }
+        footer .footer-container .footer-contents .list-last {
+          width: 100%; }
+      footer .footer-container .copyright {
+        padding: 20px 0; } }
+
+/*# sourceMappingURL=style.css.map */

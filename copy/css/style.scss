@@ -1,0 +1,1226 @@
+body{
+  font-family: "Noto Sans JP",sans-serif;
+  color: #333;
+}
+
+header{
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 100;
+  transition: 0.5s;
+  width: 100%;
+  .header-right{
+    .nav{
+      font-size: 20px;
+      font-family: "Noto Serif JP",serif;
+      color: #fff;
+      display: flex;
+      justify-content: flex-end;
+      font-weight: bold;
+      .black{
+        background-color: #252c34;
+        display: inline-block;
+        align-items: center;
+        padding: 60px 40px;
+      }
+      .pink{
+        background-color: #cc2c86;
+        padding: 60px 40px;
+        align-items: center;
+        display: inline-block;
+      }
+    }
+  }
+  .header-left{
+    writing-mode: vertical-lr;
+    display: flex;
+    position: fixed;
+    z-index: 100;
+    left: 30px;
+    top: 25%;
+    align-items: center;
+    .sns{
+      .sns-icon{
+        margin-bottom: 30px;
+        .face{
+          margin-left: 4px;
+        }
+      }
+    }
+    p{
+      font-weight: bold;
+      font-size: 14px;
+      letter-spacing: 2px;
+      padding-bottom: 100px;
+      position: relative;
+      transform: rotate(180deg);
+      &:before{
+        content: "";
+        width: 1px;
+        height: 70px;
+        background-color: #252c34;
+        position: absolute;
+        bottom: 0;
+        right: 50%;
+      }
+    }
+  }
+}
+.scroll-nav{
+  background-color: #fff;
+  padding: 20px 20px;
+  .nav{
+    .black{
+      padding: 15px 40px !important;
+    }
+    .pink{
+      padding: 15px 40px !important;
+    }
+  }
+}
+
+.top-top{
+  animation: SlideIn 2.0s;
+  @keyframes SlideIn {
+    0% {
+      opacity: 0;
+      transform: translateX(-64px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+}
+
+
+.main-img{
+  background-image: url(https://www.gpol.co.jp/recruit/career_dir/assets/images/bg_mv.jpg);
+  background-size: cover;
+  // background-position: right top;
+  // background-repeat: no-repeat;
+  margin-left: 25%;
+  position: relative;
+  right: 0;
+  top: 0;
+  .main-img-contents{
+    min-height: 700px;
+  }
+}
+
+.top-text{
+  font-family: "Noto Serif JP",serif;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 24px;
+  position: absolute;
+  left: -20%;
+  top: 200px;
+  .career{
+    color: #fff;
+    float: left;
+    h3{
+      background-color: #252c34;
+      padding: 15px 10px;
+    }
+  }
+  
+  .director{
+    float: right;
+    h3{
+      padding: 15px 10px;
+      background-color: #fff;
+    }
+  }
+
+  .head{
+    font-family: "Noto Sans JP",sans-serif;
+    font-size: 50px;
+    margin-top: 90px;
+    line-height: 1.4;
+    font-weight: 600;
+    letter-spacing: 9px;
+  }
+}
+
+.top-under{
+  display: flex;
+  position: relative;
+  .recruitment{
+    width: 50%;
+    background-color: #fff;
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: 2px;
+    padding: 40px 0 0 60px;
+    line-height: 1.4;
+    position: absolute;
+    top: -70px;
+  }
+
+  .agresive{
+    width: 50%;
+    color: #fff;
+    background-color: #252c34;
+    font-family: "Noto Serif JP",serif;
+    position: absolute;
+    left: 50%;
+    padding: 28px;
+    font-size: 18px;
+  }
+}
+
+
+.heading{
+  font-family: "Noto Serif JP",serif;
+  text-align: center;
+  font-weight: bold;
+  font-size: 42px;
+  letter-spacing: 1px;
+  opacity: 0;
+  transition: 1.3s;
+  transform: translateY(40px);
+  // visibility: hidden;
+  h2{
+    position: relative;
+    &:before{
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: -20px; /*下線の上下位置調整*/
+      display: inline-block;
+      width: 100px; /*下線の幅*/
+      height: 2px; /*下線の太さ*/
+      -moz-transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translate(-50%); /*位置調整*/
+      background-color: #cc2c86; /*下線の色*/
+    }
+  }
+}
+
+
+
+.description{
+  margin-top: 180px;
+  .description-contents{
+    margin-top: 80px;
+    display: flex;
+    .description-img{
+      // opacity: 0;
+      // transition: 1s;
+      // transform: translateY(40px);
+      width: 50%;
+      .office-img{
+        width: 100%;
+      }
+    }
+    .description-heading{
+      // opacity: 0;
+      // transition: 3s;
+      // transform: translateX(-40px);
+      width: 50%;
+      font-weight: 600;
+      font-size: 65px;
+      padding-top: 50px;
+      padding-left: 90px;
+      letter-spacing: 5px;
+    }
+  }
+  .description-text{
+    margin-left: 28%;
+    position: relative;
+    .description-text-contents{
+      background-color: #fff;
+      position: absolute;
+      top: -100px;
+      right: 0;
+      padding: 40px 52px 0 40px;
+      h4{
+        font-weight: bold;
+        font-family: "Noto Serif JP",serif;
+        // margin-top: 40px;
+        font-size: 22px;
+      }
+      p{
+        margin-top: 25px;
+        font-weight: 400;
+        letter-spacing: 0.1rem;
+        line-height: 1.4;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.attraction{
+  margin-top: 265px;
+  .attraction-img{
+    margin-top: 60px;
+    background-image: url(https://www.gpol.co.jp/recruit/career_dir/assets/images/bg_attraction.jpg);
+    background-size: cover;
+    min-height: 450px;
+    h3{
+      padding-top: 134px;
+      padding-left: 27px;
+      color: rgba($color: #fff, $alpha: 0.8);
+      font-weight: bold;
+      font-size: 75px;
+      letter-spacing: 1px;
+    }
+  }
+
+  .attraction-text{
+    background-color: #eee;
+    display: flex;
+    flex-wrap: wrap;
+    .attraction-contents{
+      display: flex;
+      width: 50%;
+      padding-right: 50px;
+      padding-bottom: 60px;
+      position: relative;
+      top: -150px;
+      h4{
+        font-weight: bold;
+        font-family: "Noto Serif JP",serif;
+        background-color: #252c34;
+        color: #fff;
+        padding: 10px 30px;
+        border-left: 5px solid #cc2c86;
+        display: inline-block;
+        font-size: 22px;
+        z-index: 2;
+        position: absolute;
+      }
+      p{
+        background-color: #fff;
+        padding: 50px 40px;
+        line-height: 2;
+        font-size: 13px;
+        position: relative;
+        top: 20px;
+        left: 20px;
+        z-index: 0;
+      }
+    }
+  }
+}
+
+.present{
+  margin-top: 100px;
+  margin-bottom: 100px;
+  overflow: hidden;
+  .mini-heading{
+    text-align: center;
+    font-family: "Noto Serif JP",serif;
+    font-weight: 400;
+    margin-top: 60px;
+    font-size: 20px;
+  }
+
+  .persons{
+    margin: 20px;
+    margin-top: 50px;
+    .person{
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 80px;
+      .person-img{
+        width: 32%;
+        position: relative;
+        img{
+          width: 100%;
+        }
+        .person-number{
+          width: 25%;
+          position: absolute;
+          top: -10px;
+          left: 10px;
+        }
+        .name{
+          background-color: #252c34;
+          color: #fff;
+          text-align: center;
+          font-weight: bold;
+          padding: 10px 0;
+          width: 85%;
+          position: relative;
+          top: -100px;
+          left: 30%;
+        }
+      }
+
+      .person-text{
+        width: 60%;
+        .person-career{
+          display: flex;
+          font-weight: bold;
+          align-items: flex-end;
+          letter-spacing: 1px;
+          .history{
+            padding: 3px 8px;
+            border: 1px solid #252c34;
+            margin-right: 30px;
+            font-size: 15px;
+          }
+          .campany-name{
+            display: flex;
+            .fa-play{
+              margin: 0 20px;
+              font-size: 8px;
+              color: #abbbbb;
+            }
+          }
+        }
+
+        .person-heading{
+          margin-top: 30px;
+          padding-left: 15px;
+          font-family: "Noto Serif JP",serif;
+          font-weight: bold;
+          border-left: 2px solid #cc2c86;
+          font-size: 22px;
+          line-height: 1.5;
+        }
+
+        .interview{
+          margin-top: 60px;
+          border: 4px solid #ddd;
+          padding: 30px;
+          .interview-heading{
+            font-family: "Noto Serif JP",serif;
+            align-items: center;
+            position: relative;
+            top: -40px;
+            background-color: #fff;
+            padding: 0 20px;
+            display: inline-block;
+            .interview-interview{
+              float: left;
+              margin-right: 18px;
+              padding: 3px 20px;
+              background-color: #cc2c86;
+              color: #fff;
+            }
+            .feeling{
+              display: inline-block;
+              font-weight: bold;
+              color: #cc2c86;
+            }
+          }
+          .interview-text{
+            line-height: 2;
+          }
+        }
+      }
+    }
+    .person:nth-child(even){
+      flex-direction: row-reverse;
+      .name{
+        position: relative;
+        left: -10%;
+      }
+    }
+  }
+}
+
+.environment{
+  background-color: #eee;
+  .container{
+    margin: 0 20px;
+    padding: 30px 0 70px;
+    .environment-environment{
+      background-image: url(https://www.gpol.co.jp/recruit/career_dir/assets/images/bg_environment.jpg);
+      background-size: cover;
+      margin-top: 25px;
+      color: #fff;
+      .environment-top{
+        text-align: center;
+        padding-top: 70px;
+        .environment-en{
+          color: rgba($color: #fff, $alpha: 0.8);
+          font-weight: bold;
+          letter-spacing: 1px;
+        }
+        h3{
+          display: inline-block;
+          font-weight: bold;
+          padding-top: 20px;
+          font-size: 45px;
+          font-family: "Noto Serif JP",serif;
+          position: relative;
+        }
+        h3:before {
+          content: '';
+          position: absolute;
+          left: 50%;
+          bottom: -20px; /*下線の上下位置調整*/
+          display: inline-block;
+          width: 100px; /*下線の幅*/
+          height: 2px; /*下線の太さ*/
+          -moz-transform: translateX(-50%);
+          -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+          transform: translate(-50%); /*位置調整*/
+          background-color: #fff; /*下線の色*/
+        }
+        .number-director{
+          color: #333;
+          margin-top: 60px;
+          font-weight: bold;
+          p{
+            display: inline-block;
+            padding: 18px;
+            background-color: #fff;
+            font-size: 24px;
+            letter-spacing: 1px;
+            span{
+              color: #cc2c86;
+            }
+          }
+        }
+        .small{
+          margin-top: 10px;
+          font-size: 14px;
+        }
+      }
+
+      .environment-under{
+        display: flex;
+        padding: 20px 90px;
+        padding-bottom: 60px;
+        .under-img{
+          width: 50%;
+          img{
+            width: 100%;
+          }
+        }
+        .under-text{
+          width: 50%;
+          margin-right: 40px;
+          font-size: 16px;
+          p{
+            line-height: 2.2;
+            margin-top: 40px;
+          }
+          .date{
+            margin: 0;
+            text-align: right;
+          }
+        }
+      }
+    }
+
+    .environment-center{
+      margin-top: 60px;
+      .center-contents{
+        display: flex;
+        margin-bottom: 40px;
+        background-color: #fff;
+        .center-img{
+          width: 35%;
+          img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+        .center-text{
+          width: 65%;
+          font-family: "Noto Serif JP",serif;
+          padding: 40px 35px;
+          font-weight: bold;
+          .center-text-top{
+            padding-left: 15px;
+            border-left: 2px solid #cc2c86;
+            h4{
+              font-size: 30px;
+            }
+            p{
+              font-size: 22px;
+              margin-top: 10px;
+            }
+          }
+          .center-text-under{
+            margin-top: 20px;
+            p{
+              line-height: 2.0;
+            }
+          }
+        }
+      }
+      .center-contents:nth-child(even){
+        flex-direction: row-reverse;
+      }
+    }
+
+    .feature{
+      margin-top: 90px;
+      .feature-heading{
+        padding: 0 40px;
+        h4{
+          text-align: center;
+          font-weight: bold;
+          font-family: "Noto Serif JP",serif;
+          font-size: 30px;
+        }
+        p{
+          line-height: 2;
+          margin-top: 30px;
+        }
+      }
+
+      .feature-contents{
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        .system-m{
+          margin-bottom: 40px;
+          padding-right: 20px;
+          width: 50%;
+          display: flex;
+          .feature-system{
+            padding: 30px;
+            display: flex;
+            background-color: #fff;
+            border-top: 12px solid #cc2c86;
+            .feature-img{
+              padding-right: 30px;
+              width: 40%;
+              img{
+                width: 100%;
+              }
+            }
+            .feature-text{
+              width: 60%;
+              h5{
+                font-family: "Noto Serif JP",serif;
+                font-weight: bold;
+                font-size: 20px;
+                color: #cc2c86;
+                letter-spacing: 2px;
+              }
+              p{
+                margin-top: 20px;
+                line-height: 2;
+              }
+            }
+          }
+        }
+        .system-m:nth-child(even){
+          padding-right: 0;
+          padding-left: 20px;
+        }
+      }
+    }
+  }
+}
+
+.allowance{
+  background-color: #252c34;
+  color: #fff;
+  .container{
+    padding: 80px 100px;
+    .allowance-heading{
+      text-align: center;
+      font-weight: bold;
+      font-size: 30px;
+      font-family: "Noto Serif JP",serif;
+    }
+    .allowance-contents{
+      margin-top: 50px;
+      .allowance-content{
+        display: flex;
+        padding-bottom: 25px;
+        margin-bottom: 25px;
+        border-bottom: 1px dotted rgba($color: #fff, $alpha: 0.3
+        );
+        .bold{
+          font-weight: bold;
+          width: 170px;
+        }
+      }
+    }
+  }
+}
+
+.data{
+  padding: 100px 0;
+  .container{
+    margin: 0 20px;
+    .data-heading{
+      text-align: center;
+      font-weight: bold;
+      h4{
+        color: rgba(226,226,226,0.86);
+        font-size: 40px;
+      }
+      h5{
+        font-family: "Noto Serif JP",serif;
+        font-size: 35px;
+        margin-top: 10px;
+      }
+    }
+    .data-contents{
+      margin-top: 60px;
+      display: flex;
+      justify-content: space-between;
+      .data-content{
+        width: 30%;
+        padding: 30px 10px 20px;
+        border: 3px solid #bdbdbd;
+        border-radius: 10px;
+        .data-icon{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          p{
+            color: #cc2c86;
+            font-size: 24px;
+            font-weight: bold;
+            font-family: "Noto Serif JP",serif;
+            margin-left: 13px;
+          }
+        }
+        .data-number{
+          margin-top: 30px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
+
+.office{
+  background-image: url(https://www.gpol.co.jp/recruit/career_dir/assets/images/bg_office.jpg);
+  background-size: cover;
+  .container{
+    margin: 0 20px;
+    padding: 100px 0 50px;
+    .office-heading{
+      text-align: center;
+      font-weight: bold;
+      h5{
+        color: rgba($color: #fff, $alpha: 0.3);
+        font-size: 40px;
+      }
+      p{
+        margin-top: 7px;
+        font-family: "Noto Serif JP",serif;
+        font-size: 30px;
+        color:#fff;
+      }
+    }
+    .office-contents{
+      margin-top: 50px;
+      .direction{
+        margin-top: 20px;
+        margin-bottom: 50px;
+        color:#fff;
+      }
+      .office-content{
+        display: flex;
+        .office-img{
+          position: relative;
+          width: 40%;
+          .office-img-img{
+            object-fit: cover;
+            // height: auto;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            z-index: 1;
+          }
+          .office-name{
+            color: #fff;
+            background-color: #252c34;
+            // display: flex;
+            display: inline-block;
+            padding: 20px 10px;
+            position: absolute;
+            top: -20px;
+            left: -10px;
+            z-index: 2;
+            img{
+              width: 30%;
+            }
+            a{
+              float: left;
+            }
+            p{
+              float: left;
+              margin-right: 20px;
+            }
+          }
+        }
+        .google{
+          width: 60%;
+          padding-left: 10px;
+          iframe{
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.carousel{
+  overflow: hidden;
+  padding: 100px 0;
+  .carousel-heading{
+    text-align: center;
+    font-family: "Noto Serif JP",serif;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .slider{
+    margin-top: 50px;
+    .slider-content{
+      margin-right: 25px;
+      .slider-img{
+        width: 100%;
+      }
+    }
+  }
+  .insta-logo{
+    margin-top: 20px;
+    text-align: right;
+    margin-right: 20px;
+  }
+}  
+
+.future{
+  .container{
+    margin: 0 10px;
+    .future-contents{
+      margin-top: 60px;
+      padding: 60px;
+      background-color: #eee;
+      .future-text{
+        background-color: #fff;
+        padding: 50px 75px;
+        font-family: "Noto Serif JP",serif;
+        font-weight: bold;
+        line-height: 2;
+        font-size: 19px;
+      }
+      .contact-form{
+        margin-top: 70px;
+        display: flex;
+        text-align: center;
+        p{
+          font-size: 17px;
+        }
+        a{
+          font-family: "Noto Serif JP",serif;
+          font-weight: bold;
+          margin-top: 20px;
+          padding: 30px 0;
+          display: block;
+          color: #fff;
+          font-size: 25px;
+        }
+        .contact-form-left{
+          width: 50%;
+          padding: 0 30px;
+          a{
+            background-color: #252c34;
+          }
+        }
+        .contact-form-right{
+          width: 50%;
+          padding: 0 30px;
+          a{
+            background-color: #cc2c86;
+          }
+          .under-entry{
+            margin-top: 20px;
+            font-family: "Noto Serif JP",serif;
+          }
+        }
+      }
+    }
+    .future-under{
+      margin: 60px 0;
+      text-align: center;
+      font-weight: bold;
+      p{
+        font-size: 17px;
+      }
+      a{
+        font-family: "Noto Serif JP",serif;
+        margin-top: 20px;
+        display: inline-block;
+        padding: 25px 40px;
+        border: 1px solid #252c34;
+        font-size: 23px;
+        span{
+          margin-left: 10px;
+        }
+        img{
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}
+
+.link{
+  background-color: #252c34;
+  color: #fff;
+  font-family: "Noto Serif JP",serif;
+  .link-contents{
+    padding: 70px 17px;
+    display: flex;
+    .link-left{
+      width: 35%;
+      h5{
+        font-weight: bold;
+        font-size: 30px;
+        position: relative;
+        padding-left: 80px;
+        &:before{
+          content: "";
+          width: 70px;
+          height: 1px;
+          background-color: #cc2c86;
+          position: absolute;
+          top: 50%;
+          left: 0;
+        }
+      }
+    }
+    .link-right{
+      width: 65%;
+      .link-content{
+        display: flex;
+        justify-content: space-between;
+        font-weight: bold;
+        li{
+          border: 1px solid rgba($color: #fff, $alpha: 0.25);
+          text-align: center;
+          padding: 18px 25px 18px 40px;
+          span{
+            color: #bec0c2;
+            font-size: 1px;
+            padding-right: 18px;
+            img{
+              vertical-align: middle;
+              width: 7px;
+              margin-left: 10px;
+              padding-right: 0;
+            }
+          }
+        }
+      }
+      .banner{
+        margin-top: 20px;
+        img{
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+footer{
+  .footer-container{
+    margin: 20px 30px 30px;
+    .footer-contents{
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      li{
+        padding-left: 30px;
+        vertical-align: middle;
+        a{
+          font-size: 12px;
+          span{
+            img{
+              width: 9px;
+              vertical-align: middle;
+            }
+          }
+        }
+      }
+      .list-last{
+        a{
+          position: relative;
+          top: -26px;
+        }
+        .m-l{
+          margin-left: 30px;
+        }
+      }
+      .border-right{
+        padding-right: 20px;
+        border-right: 1px solid #bdbdbd;
+      }
+    }
+  }
+}
+
+// スクロールした時
+.active{
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+  visibility: visible;
+}
+.active-x{
+  opacity: 1 !important;
+  transform: translateX(0) !important;
+  visibility: visible;
+}
+
+// レスポンシブ
+@media(max-width:1060px){
+  header{
+    display: flex;
+    flex-direction: row-reverse;
+    .header-right{
+      .black{
+        padding: 15px 40px !important;
+      }
+      .pink{
+        padding: 15px 40px !important;
+      }
+    }
+    .scroll-nav{
+      padding: 10px;
+    }
+    .header-left{
+      position: unset;
+      writing-mode: unset;
+      margin-right: 40px;
+      .sns-icon{
+        margin-left: 20px;
+      }
+      p{
+        display: none;
+      }
+    }
+  }
+
+  .top{
+    overflow: hidden;
+    .main-img{
+      position: unset;
+      margin: 0;
+      .top-text{
+        top: 150px;
+        left: 3%;
+        h3{
+          display: inline-block;
+          padding: 10px 5px;
+        }
+        .career{
+          float: unset;
+        }
+        .director{
+          float: unset;
+          margin-top: 10px;
+        }
+        .head{
+          margin-top: 23px;
+          font-size: 42px;
+        }
+      }
+    }
+    .top-under{
+      top: -135px;
+      // position: unset;
+      display: unset;
+      .recruitment{
+        position: unset;
+        font-size: 20px;
+        padding: 30px 30px 21px 40px;
+        width: 60%;
+      }
+      .agresive{
+        text-align: right;
+        position: unset;
+        margin-left: 10%;
+        width: 90%;
+      }
+    }
+  }
+  .heading{
+    font-size: 35px;
+  }
+
+  .description{
+    margin-top: -60px;
+    .description-contents{
+      display: unset;
+      .description-img{
+        margin-top: 50px;
+        width: 90%;
+        img{
+          height: 400px;
+        }
+      }
+      .description-heading{
+        width: 90%;
+        float: right;
+        position: relative;
+        top: -200px;
+        background-color: #fff;
+        padding-bottom: 50px;
+      }
+    }
+    .description-text{
+      margin: 0;
+      top: 100px;
+      .description-text-contents{
+        top: 0;
+
+      }
+    }
+  }
+
+  .attraction{
+    margin-top: 500px;
+    .attraction-text{
+      // display: unset;
+      padding: 0 30px;
+      .attraction-contents{
+        width: 100%;
+        padding-right: 0;
+        p{
+          left: 0;
+          padding-bottom: 30px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  .present{
+    .person{
+      display: unset !important;
+      justify-content: unset;
+      .person-img{
+        margin: 0 auto;
+        width: 40% !important;
+      }
+      .person-text{
+        width: 100% !important;
+        margin-bottom: 50px;
+      }
+    }
+  }
+
+  .environment{
+    .environment-under{
+      flex-direction: column-reverse;
+      margin: 0 auto;
+      .under-text{
+        width: 90% !important;
+        margin: 0 auto;
+      }
+      .under-img{
+        width: 70% !important;
+        margin: 0 auto;
+      }
+    }
+    .feature-contents{
+      display: unset !important;
+      .system-m{
+        width: 100% !important;
+        margin-top: 50px;
+        .feature-img{
+          width: 20% !important;
+        }
+        .feature-text{
+          width: 100% !important;
+        }
+      }
+      .system-m:nth-child(even){
+        padding-left: 0 !important;
+      }
+    }
+  }
+
+  .data{
+    .data-contents{
+      display: unset !important;
+      .data-content{
+        width: 100% !important;
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 30px !important;
+        .data-number{
+          margin-top: 0 !important;
+        }
+      }
+    }
+  }
+  .office{
+    .office-content{
+      .office-img{
+        width: 30% !important;
+        .office-img-img{
+          height: 190px;
+        }
+      }
+      .google{
+        width: 70% !important;
+        iframe{
+          height: 190px;
+        }
+      }
+    }
+  }
+
+  .future{
+    .contact-form{
+      display: unset !important;
+      .contact-form-left{
+        width: 100% !important;
+        margin-top: 60px;
+      }
+      .contact-form-right{
+        width: 100% !important;
+        margin-top: 40px;
+      }
+    }
+  }
+
+  .link{
+    padding: 50px 20px 40px !important;
+    .link-contents{
+      display: unset;
+      .link-right{
+        width: 80%;
+        margin: 30px auto 0;
+      }
+    }
+  }
+  
+  footer{
+    text-align: center;
+    .footer-container{
+      margin: 0;
+      .footer-contents{
+        display: unset !important;
+        li{
+          border-bottom: 1px solid #bdbdbd;
+          padding: 20px 0;
+        }
+        .list-last{
+          width: 100%;
+        }
+      }
+      .copyright{
+        padding: 20px 0;
+      }
+    }
+  }
+}
